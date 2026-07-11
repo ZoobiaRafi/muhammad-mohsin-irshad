@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Mohsin Irshad — CRM RevOps Specialist &amp; Data Analyst</title>
+<meta name="description" content="Portfolio of Muhammad Mohsin Irshad — CRM Revenue Operations professional and Data Analyst with 5+ years of experience in SQL, Python, Power BI, Tableau, and CRM systems.">
+<meta property="og:title" content="Muhammad Mohsin Irshad — CRM RevOps Specialist & Data Analyst">
+<meta property="og:description" content="Turning complex data into decisions that drive revenue. SQL, Python, Power BI, Tableau, CRM & RevOps.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230B0E14'/%3E%3Ctext x='50' y='68' font-size='52' font-family='monospace' font-weight='700' fill='%235EEAD4' text-anchor='middle'%3EMI%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================= */
+/* Tokens                        */
+/* ============================= */
+:root{
+  --bg: #0B0E14;
+  --surface: #121722;
+  --surface-2: #1A2130;
+  --border: #262E40;
+  --text: #E7EAF0;
+  --muted: #8B93A7;
+  --muted-2: #5C6478;
+  --accent: #5EEAD4;
+  --accent-dim: #2A9D8F33;
+  --amber: #F5A623;
+  --red-dot: #FF5F56;
+  --yellow-dot: #FFBD2E;
+  --green-dot: #27C93F;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --max-w: 1120px;
+  --radius: 10px;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+html{ scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+  *{ animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 64px 64px;
+  background-position: center top;
+  background-attachment: fixed;
+  position: relative;
+}
+
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(94,234,212,0.08), transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.wrap{
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+a{ color: inherit; text-decoration: none; }
+ul{ list-style: none; }
+img{ max-width:100%; display:block; }
+
+::selection{ background: var(--accent); color: var(--bg); }
+
+:focus-visible{
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.eyebrow{
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.eyebrow::before{
+  content: "--";
+  color: var(--muted-2);
+}
+
+h1,h2,h3{ font-family: var(--font-display); font-weight: 600; letter-spacing: -0.01em; }
+
+.section{ padding: 100px 0; position: relative; z-index: 1; scroll-margin-top: 90px; }
+.section-head{ max-width: 640px; margin-bottom: 56px; }
+.section-head h2{ font-size: clamp(28px, 4vw, 38px); margin-bottom: 12px; }
+.section-head p{ color: var(--muted); font-size: 16px; }
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 13px 22px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-primary{
+  background: var(--accent);
+  color: #06231F;
+  border-color: var(--accent);
+}
+.btn-primary:hover{ background: #7FF3E0; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(94,234,212,0.25); }
+.btn-ghost{ background: transparent; color: var(--text); }
+.btn-ghost:hover{ border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+/* ============================= */
+/* Nav                            */
+/* ============================= */
+header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  background: rgba(11,14,20,0.75);
+  border-bottom: 1px solid var(--border);
+}
+nav{
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--text);
+}
+.logo span{ color: var(--accent); }
+.logo .bracket{ color: var(--muted-2); font-weight: 400; }
+
+.nav-links{
+  display: flex;
+  gap: 32px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+.nav-links a{ color: var(--muted); position: relative; transition: color 0.2s; }
+.nav-links a:hover{ color: var(--accent); }
+.nav-links a .idx{ color: var(--muted-2); margin-right: 4px; }
+
+.nav-cta{ display:flex; align-items:center; gap:16px; }
+
+.hamburger{
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 200;
+}
+.hamburger span{
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  transition: all 0.25s ease;
+}
+.hamburger.active span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+.hamburger.active span:nth-child(2){ opacity: 0; }
+.hamburger.active span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-panel{
+  display: none;
+  position: fixed;
+  inset: 0 0 0 30%;
+  top: 61px;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  padding: 32px 24px;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.3s ease, visibility 0s linear 0.3s;
+  z-index: 150;
+}
+.mobile-panel.open{
+  transform: translateX(0);
+  visibility: visible;
+  transition: transform 0.3s ease, visibility 0s linear 0s;
+}
+.mobile-panel a{
+  display: block;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 15px;
+  color: var(--text);
+}
+
+@media (max-width: 860px){
+  .nav-links{ display: none; }
+  .nav-cta .btn-primary{ display:none; }
+  .hamburger{ display: flex; }
+  .mobile-panel{ display: block; }
+}
+
+/* ============================= */
+/* Hero                           */
+/* ============================= */
+.hero{
+  padding: 90px 0 70px;
+  position: relative;
+  z-index: 1;
+}
+.hero-grid{
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
+@media (max-width: 900px){
+  .hero-grid{ grid-template-columns: 1fr; }
+}
+
+.status-line{
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--green-dot);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.status-dot{
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--green-dot);
+  box-shadow: 0 0 0 0 rgba(39,201,63,0.6);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse{
+  0%{ box-shadow: 0 0 0 0 rgba(39,201,63,0.5); }
+  70%{ box-shadow: 0 0 0 8px rgba(39,201,63,0); }
+  100%{ box-shadow: 0 0 0 0 rgba(39,201,63,0); }
+}
+
+.hero h1{
+  font-size: clamp(38px, 6vw, 60px);
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+.hero h1 .accent-text{ color: var(--accent); }
+
+.hero-tagline{
+  font-size: 19px;
+  color: var(--muted);
+  max-width: 480px;
+  margin-bottom: 32px;
+}
+
+.hero-cta{ display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 44px; }
+
+.hero-meta{
+  display: flex;
+  gap: 28px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+.hero-meta a:hover{ color: var(--accent); }
+
+/* Terminal card */
+.terminal{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+}
+.terminal-bar{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+}
+.tdot{ width: 11px; height: 11px; border-radius: 50%; }
+.tdot.red{ background: var(--red-dot); }
+.tdot.yellow{ background: var(--yellow-dot); }
+.tdot.green{ background: var(--green-dot); }
+.terminal-title{
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted-2);
+  margin-left: 8px;
+}
+.terminal-body{
+  padding: 22px 20px;
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  min-height: 230px;
+}
+.terminal-body .prompt{ color: var(--muted-2); }
+.terminal-body .kw{ color: var(--amber); }
+.terminal-body .str{ color: var(--accent); }
+.terminal-body .fn{ color: #93C5FD; }
+.terminal-line{ white-space: pre-wrap; word-break: break-word; opacity: 0; }
+.terminal-result{
+  margin-top: 16px;
+  border-top: 1px dashed var(--border);
+  padding-top: 14px;
+  opacity: 0;
+}
+.terminal-result .row{ display:flex; justify-content: space-between; color: var(--muted); padding: 4px 0; }
+.terminal-result .row b{ color: var(--text); font-weight: 500; }
+.cursor{
+  display: inline-block;
+  width: 8px; height: 15px;
+  background: var(--accent);
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+}
+@keyframes blink{ 50%{ opacity: 0; } }
+
+/* ============================= */
+/* About                          */
+/* ============================= */
+.about-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+@media (max-width: 860px){ .about-grid{ grid-template-columns: 1fr; gap: 40px; } }
+
+.about-grid p{ color: var(--muted); font-size: 16px; margin-bottom: 16px; }
+.about-grid p b{ color: var(--text); font-weight: 600; }
+
+.stat-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.stat-card{
+  background: var(--surface);
+  padding: 26px 22px;
+}
+.stat-num{
+  font-family: var(--font-mono);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.stat-label{
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* ============================= */
+/* Skills                         */
+/* ============================= */
+.skills-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 900px){ .skills-grid{ grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 600px){ .skills-grid{ grid-template-columns: 1fr; } }
+
+.skill-card{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.skill-card:hover{ border-color: var(--accent); transform: translateY(-4px); }
+.skill-card h3{
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--amber);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.tag-row{ display: flex; flex-wrap: wrap; gap: 8px; }
+.tag{
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  background: var(--surface-2);
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+/* ============================= */
+/* Experience                     */
+/* ============================= */
+.timeline{ position: relative; }
+.timeline::before{
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: var(--border);
+}
+.tl-item{
+  position: relative;
+  padding-left: 40px;
+  padding-bottom: 48px;
+}
+.tl-item:last-child{ padding-bottom: 0; }
+.tl-dot{
+  position: absolute;
+  left: 0; top: 4px;
+  width: 19px; height: 19px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2px solid var(--accent);
+}
+.tl-dot::after{
+  content:"";
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.tl-date{
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--amber);
+  margin-bottom: 6px;
+}
+.tl-item h3{ font-size: 19px; margin-bottom: 2px; }
+.tl-company{ color: var(--accent); font-size: 14px; margin-bottom: 12px; font-family: var(--font-mono); }
+.tl-item ul{ color: var(--muted); font-size: 14.5px; }
+.tl-item li{ margin-bottom: 8px; padding-left: 18px; position: relative; }
+.tl-item li::before{
+  content: "›";
+  position: absolute; left: 0; color: var(--muted-2);
+}
+
+/* ============================= */
+/* Video embeds                   */
+/* ============================= */
+.video-embed{
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #000;
+}
+.video-embed iframe{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.videos-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+@media (max-width: 900px){ .videos-grid{ grid-template-columns: 1fr; } }
+.video-card h3{
+  font-size: 15.5px;
+  font-weight: 500;
+  margin-top: 14px;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* ============================= */
+/* Projects                       */
+/* ============================= */
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+@media (max-width: 760px){ .projects-grid{ grid-template-columns: 1fr; } }
+
+.project-card{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px;
+  transition: transform 0.25s, border-color 0.25s, box-shadow .25s;
+}
+.project-card:hover{
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+}
+.project-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+.project-status{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--green-dot);
+  border: 1px solid rgba(39,201,63,0.3);
+  background: rgba(39,201,63,0.08);
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+.project-status .d{ width:6px; height:6px; border-radius:50%; background: var(--green-dot); }
+.project-card h3{ font-size: 19px; margin-bottom: 10px; }
+.project-card p{ color: var(--muted); font-size: 14.5px; margin-bottom: 16px; }
+.project-card .tag-row{ margin-top: auto; }
+
+/* ============================= */
+/* Certifications                 */
+/* ============================= */
+.cert-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+@media (max-width: 900px){ .cert-grid{ grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 520px){ .cert-grid{ grid-template-columns: 1fr; } }
+
+.cert-badge{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  transition: border-color .2s;
+}
+.cert-badge:hover{ border-color: var(--amber); }
+.cert-icon{
+  font-family: var(--font-mono);
+  color: var(--amber);
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.cert-badge span.name{ font-size: 13.5px; color: var(--text); line-height: 1.4; }
+
+/* ============================= */
+/* Contact                        */
+/* ============================= */
+.contact-info{ max-width: 480px; }
+.contact-info p{ color: var(--muted); margin-bottom: 28px; }
+.contact-links{ display: flex; flex-direction: column; gap: 14px; }
+.contact-link{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  transition: border-color .2s, transform .2s;
+}
+.contact-link:hover{ border-color: var(--accent); color: var(--accent); transform: translateX(4px); }
+.contact-link .k{ color: var(--muted-2); }
+
+/* ============================= */
+/* Footer                         */
+/* ============================= */
+footer{
+  border-top: 1px solid var(--border);
+  padding: 32px 0;
+  position: relative; z-index: 1;
+}
+.footer-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.back-top{
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 14px;
+  transition: border-color .2s, color .2s;
+}
+.back-top:hover{ border-color: var(--accent); color: var(--accent); }
+.footer-credit{
+  text-align: center;
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted-2);
+}
+.footer-credit a{ color: var(--muted); transition: color .2s; }
+.footer-credit a:hover{ color: var(--accent); }
+
+/* ============================= */
+/* Scroll reveal                  */
+/* ============================= */
+.reveal{
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible{ opacity: 1; transform: translateY(0); }
+
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#top" class="logo"><span class="bracket">[</span>M<span>I</span><span class="bracket">]</span></a>
+    <ul class="nav-links">
+      <li><a href="#about"><span class="idx">01</span>About</a></li>
+      <li><a href="#videos"><span class="idx">02</span>Videos</a></li>
+      <li><a href="#skills"><span class="idx">03</span>Skills</a></li>
+      <li><a href="#experience"><span class="idx">04</span>Experience</a></li>
+      <li><a href="#projects"><span class="idx">05</span>Projects</a></li>
+      <li><a href="#certifications"><span class="idx">06</span>Certs</a></li>
+      <li><a href="#contact"><span class="idx">07</span>Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="https://calendar.app.google/m4bMe4t89uUxqup1A" target="_blank" class="btn btn-primary">Get in touch</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+</header>
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#about">01 — About</a>
+  <a href="#videos">02 — Videos</a>
+  <a href="#skills">03 — Skills</a>
+  <a href="#experience">04 — Experience</a>
+  <a href="#projects">05 — Projects</a>
+  <a href="#certifications">06 — Certifications</a>
+  <a href="#contact">07 — Contact</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="status-line"><span class="status-dot"></span> AVAILABLE FOR REMOTE ROLES &amp; FREELANCE</div>
+        <h1>Muhammad Mohsin Irshad —<br>turning raw data into<br><span class="accent-text">revenue decisions.</span></h1>
+        <p class="hero-tagline">CRM Revenue Operations specialist &amp; Data Analyst. 5+ years building dashboards, automations, and CRM systems for US-based energy, fintech, and tech companies.</p>
+        <div class="hero-cta">
+          <a href="https://calendar.app.google/m4bMe4t89uUxqup1A" target="_blank" class="btn btn-primary">Book a Meeting</a>
+          <a href="#videos" class="btn btn-ghost">Watch How I Work</a>
+          <a href="https://upwork.com/freelancers/~0119f244c4d63547bd?viewMode=1" target="_blank" rel="noopener" class="btn btn-ghost">View Upwork Portfolio</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Karachi, Pakistan</span>
+          <a href="mailto:mohsin22irshad@gmail.com">mohsin22irshad@gmail.com</a>
+          <a href="tel:+923170282324">+92 317 0282324</a>
+        </div>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="tdot red"></span><span class="tdot yellow"></span><span class="tdot green"></span>
+          <span class="terminal-title">query.sql — mohsin_irshad</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <div class="terminal-line" id="line1"><span class="prompt">&gt; </span><span class="kw">SELECT</span> impact <span class="kw">FROM</span> <span class="fn">career</span><br><span class="kw">WHERE</span> focus <span class="kw">=</span> <span class="str">'clean data'</span><br><span class="kw">AND</span> outcome <span class="kw">=</span> <span class="str">'clear decisions'</span>;</div>
+          <div class="terminal-result" id="resultBlock">
+            <div class="row"><span>years_experience</span><b>5+</b></div>
+            <div class="row"><span>crm_platforms</span><b>Bitrix24, Salesforce, Insightly</b></div>
+            <div class="row"><span>reporting_time_saved</span><b>~90%</b></div>
+            <div class="row"><span>status</span><b style="color: var(--green-dot)">connected ●</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">01 / about</div>
+        <h2>Data work that leadership actually reads.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="reveal">
+          <p>I'm a <b>CRM Revenue Operations professional and Data Analyst</b> with over five years of experience turning messy, disconnected datasets into dashboards and systems that leadership relies on to make decisions.</p>
+          <p>I've worked across <b>energy, fintech, and technology</b> sectors for US-based companies — reconciling payments, writing complex SQL, building CRM systems from the ground up, and automating reports that used to take hours down to minutes.</p>
+          <p>I'm comfortable owning a data problem end-to-end: from cleaning and modeling the data, to building the dashboard, to explaining what it means to the people making the call.</p>
+        </div>
+        <div class="reveal">
+          <div class="stat-grid">
+            <div class="stat-card"><div class="stat-num">5+</div><div class="stat-label">Years of experience</div></div>
+            <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">CRM platforms administered</div></div>
+            <div class="stat-card"><div class="stat-num">9</div><div class="stat-label">Datasets modeled in one project</div></div>
+            <div class="stat-card"><div class="stat-num">10min</div><div class="stat-label">Reporting cycle, down from hours</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="section" id="videos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">02 / videos</div>
+        <h2>See it in action.</h2>
+        <p>A quick introduction, plus walkthroughs of two systems I built.</p>
+      </div>
+      <div class="videos-grid">
+
+        <div class="video-card reveal">
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/gAErRMXjqgA?si=6N7Cq9Sb1NNXH-nE" title="Video Introduction" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h3>Video Introduction</h3>
+        </div>
+
+        <div class="video-card reveal">
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/j1ie4W1Rppc?si=qXWpR80_uDgDEX0A" title="Bitrix24 CRM Setup From Scratch, Mapping Fields and Stages" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h3>Bitrix24 CRM Setup From Scratch, Mapping Fields and Stages</h3>
+        </div>
+
+        <div class="video-card reveal">
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/h0PQdh1ctF4?si=bHozKX6eskUynI8s" title="Make.com Automation: Leads into CRM" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h3>Make.com Automation: Leads into CRM</h3>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">03 / skills</div>
+        <h2>Tools of the trade.</h2>
+        <p>The stack I use to get from raw data to a decision someone can act on.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3>Data Analysis &amp; BI</h3>
+          <div class="tag-row">
+            <span class="tag">SQL (MS SQL Server)</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Advanced Excel</span><span class="tag">Google Sheets</span><span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Automation &amp; Scripting</h3>
+          <div class="tag-row">
+            <span class="tag">Python (OOP, Pandas)</span><span class="tag">Power Query</span><span class="tag">Fuzzy matching</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>CRM &amp; RevOps</h3>
+          <div class="tag-row">
+            <span class="tag">Bitrix24</span><span class="tag">Salesforce (Admin)</span><span class="tag">Insightly CRM</span><span class="tag">HubSpot</span><span class="tag">Seamless.AI</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Reporting &amp; Visualization</h3>
+          <div class="tag-row">
+            <span class="tag">Dashboards</span><span class="tag">KPI scorecards</span><span class="tag">Ad-hoc reporting</span><span class="tag">Data storytelling</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Data Management</h3>
+          <div class="tag-row">
+            <span class="tag">Data cleaning</span><span class="tag">Validation</span><span class="tag">Deduplication</span><span class="tag">RDBMS</span><span class="tag">Data modeling</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Tools &amp; Platforms</h3>
+          <div class="tag-row">
+            <span class="tag">SAP</span><span class="tag">Vertexone</span><span class="tag">Slack</span><span class="tag">MS Office</span><span class="tag">HTML/CSS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">04 / experience</div>
+        <h2>Where I've put this to work.</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">MAY 2023 — MAR 2026</div>
+          <h3>Operations Analyst — Data</h3>
+          <div class="tl-company">True Power Commodities LLC · Houston, Texas (Remote)</div>
+          <ul>
+            <li>Extracted, updated, and validated large datasets in the Vertexone billing system to ensure data integrity across accounts.</li>
+            <li>Performed payment reconciliations, identifying and resolving discrepancies to maintain accurate financial records.</li>
+            <li>Designed and executed complex MS SQL Server queries to support ad-hoc business reporting needs.</li>
+            <li>Delivered daily and monthly reports on payments, utility rates, and customer accounts for management decisions.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2024 — PRESENT</div>
+          <h3>CRM &amp; RevOps Specialist</h3>
+          <div class="tl-company">RevEngine-IQ · United States (Remote / Freelance)</div>
+          <ul>
+            <li>Designed and administered a full Bitrix24 CRM system from scratch, including custom fields, pipelines, and workflows.</li>
+            <li>Integrated Seamless.AI to auto-import ICP-filtered leads, eliminating duplicates and saving hours of manual work weekly.</li>
+            <li>Delivered an automated revenue operations system giving leadership real-time visibility into pipeline health.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">JAN 2022 — AUG 2023</div>
+          <h3>Database CRM Administrator</h3>
+          <div class="tl-company">Tax Goddess Business Services · Scottsdale, Arizona (Remote)</div>
+          <ul>
+            <li>Administered Insightly CRM with full CRUD operations across pipelines, projects, tasks, and custom fields.</li>
+            <li>Built and maintained master KPI spreadsheets and departmental ad-hoc reports for leadership visibility.</li>
+            <li>Held administrative rights across CRM and Slack, coordinating task delegation and cross-team communication.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">FEB 2021 — JAN 2022</div>
+          <h3>Data Analyst (Remote)</h3>
+          <div class="tl-company">Bellissimo Traders LLC · New Jersey, USA (Remote)</div>
+          <ul>
+            <li>Built Python automation scripts that cut a KPI scorecard process down to under 10 minutes with identical output quality.</li>
+            <li>Implemented fuzzy matching algorithms in Python to validate and clean datasets with higher accuracy than native Excel.</li>
+            <li>Developed Tableau dashboards for quarterly and yearly sales performance reviews.</li>
+            <li>Managed Salesforce CRM as admin, extracted SKU-level data from SAP for downstream reporting.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-date">OCT 2020 — FEB 2022</div>
+          <h3>Data Analyst</h3>
+          <div class="tl-company">Freelance Projects · Upwork &amp; Independent</div>
+          <ul>
+            <li>Performed exploratory data analysis on product sales datasets, cleaning and standardizing raw data.</li>
+            <li>Built Power BI reports with data modeling across 9 normalized datasets using RDBMS relationship mapping.</li>
+            <li>Applied inferential and descriptive statistics to support business decision-making.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">05 / projects</div>
+        <h2>Selected work.</h2>
+        <p>A few systems and builds I'm proud to point to.</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <h3>Bitrix24 CRM Build-Out</h3>
+            <span class="project-status"><span class="d"></span>live</span>
+          </div>
+          <p>Designed a full CRM system from scratch for a US lead-generation company — custom pipelines, workflows, and Seamless.AI lead integration with clean, deduplicated field mapping.</p>
+          <div class="tag-row"><span class="tag">Bitrix24</span><span class="tag">Seamless.AI</span><span class="tag">RevOps</span></div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <h3>Python Reporting Automation</h3>
+            <span class="project-status"><span class="d"></span>shipped</span>
+          </div>
+          <p>Reduced a multi-hour Business Optimization report and KPI scorecard process to under 10 minutes, using fuzzy-matching for data validation with no drop in output quality.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Automation</span></div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <h3>Power BI Multi-Dataset Model</h3>
+            <span class="project-status"><span class="d"></span>shipped</span>
+          </div>
+          <p>Built relational data models across 9 normalized datasets, applying RDBMS relationship mapping to surface trends that weren't visible in any single source.</p>
+          <div class="tag-row"><span class="tag">Power BI</span><span class="tag">RDBMS</span><span class="tag">Data Modeling</span></div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <h3>Tableau Sales Dashboards</h3>
+            <span class="project-status"><span class="d"></span>live</span>
+          </div>
+          <p>Delivered quarterly and yearly Tableau dashboards used directly in business reviews, giving sales leadership a consistent view of performance trends.</p>
+          <div class="tag-row"><span class="tag">Tableau</span><span class="tag">Salesforce</span><span class="tag">Reporting</span></div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <h3>Workflow Automation — Make.com</h3>
+            <span class="project-status"><span class="d"></span>shipped</span>
+          </div>
+          <p>Built no-code automation scenarios in Make.com to connect CRM, lead sources, and reporting tools — removing manual handoffs between systems.</p>
+          <div class="tag-row"><span class="tag">Make.com</span><span class="tag">Automation</span><span class="tag">Integrations</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">06 / certifications</div>
+        <h2>Continued learning.</h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-badge reveal"><span class="cert-icon">▣</span><span class="name">IBM Data Analytics</span></div>
+        <div class="cert-badge reveal"><span class="cert-icon">▣</span><span class="name">Excel for Data Analysis — IBM</span></div>
+        <div class="cert-badge reveal"><span class="cert-icon">▣</span><span class="name">HubSpot Reporting Certified</span></div>
+        <div class="cert-badge reveal"><span class="cert-icon">▣</span><span class="name">HubSpot Revenue Operations Certified</span></div>
+        <div class="cert-badge reveal"><span class="cert-icon">▣</span><span class="name">Python (OOP) &amp; Python for Data Science</span></div>
+        <div class="cert-badge reveal"><span class="cert-icon">▣</span><span class="name">Analytics Storytelling — Microsoft</span></div>
+        <div class="cert-badge reveal"><span class="cert-icon">▣</span><span class="name">Power BI — Dashboards &amp; Data Modeling</span></div>
+        <div class="cert-badge reveal"><span class="cert-icon">▣</span><span class="name">Master SQL for Data Science</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">07 / contact</div>
+        <h2>Let's talk about your data.</h2>
+      </div>
+      <div class="contact-info reveal">
+        <p>Open to remote CRM/RevOps and data analyst roles, as well as freelance projects. Based in Karachi, Pakistan — experienced working across US time zones.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:mohsin22irshad@gmail.com"><span class="k">email</span> mohsin22irshad@gmail.com</a>
+          <a class="contact-link" href="tel:+923170282324"><span class="k">phone</span> +92 317 0282324</a>
+          <a class="contact-link" href="https://linkedin.com/in/muhammad-mohsinirshad-9a8b791a3" target="_blank" rel="noopener"><span class="k">linkedin</span> /muhammad-mohsinirshad</a>
+          <a class="contact-link" href="https://upwork.com/freelancers/~0119f244c4d63547bd?viewMode=1" target="_blank" rel="noopener"><span class="k">upwork</span> view profile</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-row">
+      <span>© 2026 Muhammad Mohsin Irshad. All rights reserved.</span>
+      <a href="#top" class="back-top">↑ back to top</a>
+    </div>
+    <div class="footer-credit">Designed &amp; built by <a href="https://zr-lab.netlify.app/" target="_blank" rel="noopener">Zoobia Rafi</a></div>
+  </div>
+</footer>
+
+<script>
+// Mobile menu
+const hamburger = document.getElementById('hamburger');
+const mobilePanel = document.getElementById('mobilePanel');
+hamburger.addEventListener('click', () => {
+  const isOpen = mobilePanel.classList.toggle('open');
+  hamburger.classList.toggle('active');
+  hamburger.setAttribute('aria-expanded', isOpen);
+});
+document.querySelectorAll('.mobile-panel a').forEach(a => {
+  a.addEventListener('click', () => {
+    mobilePanel.classList.remove('open');
+    hamburger.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+  });
+});
+
+// Scroll reveal
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting){
+      entry.target.classList.add('visible');
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+revealEls.forEach(el => io.observe(el));
+
+// Terminal hero animation
+const line1 = document.getElementById('line1');
+const resultBlock = document.getElementById('resultBlock');
+setTimeout(() => { line1.style.transition = 'opacity 0.4s ease'; line1.style.opacity = 1; }, 300);
+setTimeout(() => {
+  resultBlock.style.transition = 'opacity 0.6s ease';
+  resultBlock.style.opacity = 1;
+}, 1400);
+</script>
+
+</body>
+</html>
