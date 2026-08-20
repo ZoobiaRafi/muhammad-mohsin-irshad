@@ -505,6 +505,9 @@ nav{
   gap: 28px;
 }
 @media (max-width: 900px){ .videos-grid{ grid-template-columns: 1fr; } }
+.video-card:first-child{
+  grid-column: 1 / -1;
+}
 .video-card h3{
   font-size: 15.5px;
   font-weight: 500;
@@ -762,6 +765,13 @@ footer{
         <p>A quick introduction, plus walkthroughs of two systems I built.</p>
       </div>
       <div class="videos-grid">
+
+        <div class="video-card reveal">
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/X-QLUKou9Mw" title="Featured Project Walkthrough" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h3>Featured Project Walkthrough</h3>
+        </div>
 
         <div class="video-card reveal">
           <div class="video-embed">
